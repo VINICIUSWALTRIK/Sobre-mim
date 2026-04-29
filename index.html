@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinicius Waltrik | Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio tecnológico de Vinicius Waltrik com visual futurista, 3D e terminal interativo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="space-canvas" aria-hidden="true"></canvas>
+    <div class="bg-grid"></div>
+    <div class="bg-glow glow-a"></div>
+    <div class="bg-glow glow-b"></div>
+
+    <header class="topbar glass">
+      <a class="brand" href="#inicio">
+        <span class="brand-dot"></span>
+        <span>Vinicius Waltrik</span>
+      </a>
+      <button id="menu-btn" class="menu-btn" aria-label="Abrir menu">Menu</button>
+      <nav id="menu" class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero reveal">
+        <article class="hero-main glass" data-tilt>
+          <p class="badge">Analista de Projetos Jr. · Scrum · TI</p>
+          <h1>
+            Portfólio com foco em <span>execução ágil</span>,
+            inovação e resultado.
+          </h1>
+          <p class="hero-copy">
+            <span id="typed-text"></span><span class="typed-caret">|</span>
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#terminal">Acessar Terminal</a>
+            <a class="btn btn-ghost" href="#experiencia">Ver Experiência</a>
+          </div>
+          <div class="kpi-grid">
+            <div class="kpi">
+              <p class="kpi-value">3+</p>
+              <p class="kpi-label">Áreas de atuação</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi-value">Scrum</p>
+              <p class="kpi-label">Framework principal</p>
+            </div>
+            <div class="kpi">
+              <p class="kpi-value">PUC-RS</p>
+              <p class="kpi-label">MBA em andamento</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="hero-side">
+          <article class="profile-card glass reveal delay-1" data-tilt>
+            <div class="profile-photo-wrap">
+              <img
+                id="profile-photo"
+                src="assets/profile.jpg"
+                alt="Foto de Vinicius Waltrik"
+              />
+              <div id="photo-fallback" class="photo-fallback">
+                <span>VW</span>
+              </div>
+            </div>
+            <p class="profile-caption">Rio Claro, SP · Disponível para Projetos de TI</p>
+          </article>
+          <article class="mini-card glass reveal delay-2">
+            <h3>Stack de gestão</h3>
+            <p>Scrum · Scrumban · Kanban · ClickUp · Trello</p>
+          </article>
+        </aside>
+      </section>
+
+      <section class="section reveal" id="terminal">
+        <div class="section-head">
+          <h2>Console Profissional</h2>
+          <p>Navegue por comandos e veja seu perfil de forma interativa.</p>
+        </div>
+        <div class="terminal glass">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <p>vinicius@portfolio:~</p>
+          </div>
+          <div class="terminal-output" id="terminal-output"></div>
+          <form id="terminal-form" class="terminal-input-wrap" autocomplete="off">
+            <label for="terminal-input">></label>
+            <input
+              id="terminal-input"
+              name="command"
+              type="text"
+              placeholder="Digite: help"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experiencia">
+        <div class="section-head">
+          <h2>Experiência Profissional</h2>
+          <p>Trajetória com evolução de suporte técnico para projetos.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card glass" data-tilt>
+            <p class="date">Out/2025 · Presente</p>
+            <h3>Analista de Projetos Jr. · Casa do Construtor</h3>
+            <p>
+              Gestão de projetos TI com Scrum e ClickUp, mapeamento de processos
+              e apoio ao PMO.
+            </p>
+          </article>
+          <article class="timeline-card glass" data-tilt>
+            <p class="date">Fev/2025 · Out/2025</p>
+            <h3>Analista de Suporte de Sistemas Jr. · Casa do Construtor</h3>
+            <p>
+              Chamados com foco em SLA, base de conhecimento e promoção interna
+              para a frente de projetos.
+            </p>
+          </article>
+          <article class="timeline-card glass" data-tilt>
+            <p class="date">Dez/2022 · Fev/2025</p>
+            <h3>Metrologista · Víncula</h3>
+            <p>
+              Controle de qualidade, calibração e laudos técnicos com normas
+              ABNT/ISO.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="skills">
+        <div class="section-head">
+          <h2>Competências</h2>
+          <p>Equilíbrio entre método, execução e comunicação.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass" data-tilt>
+            <h3>Metodologias</h3>
+            <ul>
+              <li>Scrum e Scrumban</li>
+              <li>Kanban</li>
+              <li>Backlog e escopo</li>
+            </ul>
+          </article>
+          <article class="skill-card glass" data-tilt>
+            <h3>Ferramentas</h3>
+            <ul>
+              <li>ClickUp</li>
+              <li>Trello</li>
+              <li>JavaScript (básico)</li>
+            </ul>
+          </article>
+          <article class="skill-card glass" data-tilt>
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Comunicação com stakeholders</li>
+              <li>Gestão de prioridades</li>
+              <li>Melhoria contínua</li>
+            </ul>
+          </article>
+          <article class="skill-card glass" data-tilt>
+            <h3>Certificações</h3>
+            <ul>
+              <li>AI for Devs</li>
+              <li>Acelerando Projetos de Sucesso</li>
+              <li>Escopo de Projetos</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer glass" id="contato">
+      <p>waltrikvinicius@gmail.com · (19) 99985-6156 · Rio Claro, SP</p>
+      <p>LinkedIn: adicione sua URL oficial aqui</p>
+    </footer>
+
+    <script src="https://unpkg.com/three@0.164.1/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.164.1/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
