@@ -164,6 +164,11 @@ h1 span {
   text-align: center;
   color: #c6dbf8;
 }
+
+footer a {
+  color: inherit;        /* usa a mesma cor do texto */
+}
+
 .footer p { margin: 4px 0; }
 
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
